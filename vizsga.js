@@ -1,6 +1,6 @@
 function bubbles () {
     let db = prompt ('Hany buborekot szeretnel?')
-    let meret = prompt ('Mekkora buborekot szeretnel?')
+    let size = prompt ('Mekkora buborekot szeretnel?')
     let count = (`${db}`)
     let section = document.querySelector('section')
     let i = 0;
@@ -8,7 +8,7 @@ function bubbles () {
         let bubble = document.createElement('i');
         let x = Math.floor(Math.random() * window.innerWidth);
         let y = Math.floor(Math.random() * window.innerHeight);
-        let size = (`${meret}`);
+        let bubblesize = (`${size}`);
         bubble.style.left = x+'px';
         bubble.style.top = y+'px',
         bubble.style.width = 1+size+'px';
