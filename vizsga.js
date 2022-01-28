@@ -1,12 +1,14 @@
 function bubbles () {
-    let count = 300;
+    let db = prompt ('Hany buborekot szeretnel?')
+    let meret = prompt ('Mekkora buborekot szeretnel?')
+    let count = (`${db}`)
     let section = document.querySelector('section')
     let i = 0;
     while (i < count) {
         let bubble = document.createElement('i');
         let x = Math.floor(Math.random() * window.innerWidth);
         let y = Math.floor(Math.random() * window.innerHeight);
-        let size = Math.random() * 10;
+        let size = (`${meret}`);
         bubble.style.left = x+'px';
         bubble.style.top = y+'px',
         bubble.style.width = 1+size+'px';
@@ -17,11 +19,4 @@ function bubbles () {
         i++
     }
 }
-
-
-  
-let bubble1 = prompt ('Hany buborekot szeretnel?')
-let bubble2 = prompt ('Mennyi buborekot szeretnel?')
-console.log (`${bubble1}`)
-console.log (`${bubble2}`)
 bubbles ()
